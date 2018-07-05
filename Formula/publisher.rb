@@ -1,8 +1,8 @@
 class Publisher < Formula
   desc "Publisher - A tool for helping to publish Xojo command line apps to GitHub"
   homepage "https://github.com/gkjpettet/publisher"
-  url "https://github.com/gkjpettet/publisher/files/2166320/strike3-101-macos.zip"
-  sha256 "978a31e3a5f5932fe86d0be7a9ace6564985eb9b39e85fbff66b386ede064b4a" # openssl sha256 [file]
+  url "https://github.com/gkjpettet/publisher/files/2166362/strike3-102-macos.zip"
+  sha256 "7ede8c2931b11746a6e7f6496234a8bebf147eef9efb63a3803ee2226851ab14" # openssl sha256 [file]
 
   def install
     bin.install "publisher Libs"
@@ -10,6 +10,6 @@ class Publisher < Formula
   end
 
   test do
-    system "publisher version"
+    system "publisher -v"
   end
 end
